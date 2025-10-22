@@ -1,0 +1,385 @@
+/* ===== STYLE CHUNG ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 140px; /* Để nội dung không bị che bởi header cố định */
+}
+
+html {
+    scroll-behavior: smooth; /* Cuộn mượt mà khi click vào menu */
+}
+
+/* ===== HEADER ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* Menu Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+main section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* ===== DANH SÁCH SẢN PHẨM ===== */
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    flex: 1 1 30%;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background: white;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-item .price {
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===== FORM LIÊN HỆ ===== */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #bdc3c7;
+    margin: 5px 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet - Màn hình trung bình */
+@media (max-width: 768px) {
+    .product-item {
+        flex: 1 1 45%;
+    }
+}
+
+/* Mobile - Màn hình nhỏ */
+@media (max-width: 600px) {
+    /* Header và Navigation */
+    header {
+        padding: 15px 0;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    /* Main content */
+    main {
+        padding: 0 10px;
+    }
+    
+    main section h2 {
+        font-size: 22px;
+    }
+    
+    /* Danh sách sản phẩm - 1 cột */
+    #products-container {
+        flex-direction: column;
+    }
+    
+    .product-item {
+        flex: 1 1 100%;
+    }
+    
+    /* Product controls */
+    .product-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-box {
+        max-width: 100%;
+    }
+    
+    /* Form */
+    form {
+        padding: 15px;
+    }
+    
+    #addProductForm {
+        padding: 15px;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 15px 10px;
+    }
+    
+    footer h3 {
+        font-size: 18px;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* Đảm bảo hình ảnh responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== CLASS TIỆN ÍCH ===== */
+.hidden {
+    display: none;
+}
+
+/* ===== PRODUCT CONTROLS ===== */
+.product-controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-box button,
+#addProductBtn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover,
+#addProductBtn:hover {
+    background-color: #2980b9;
+}
+
+/* ===== FORM THÊM SẢN PHẨM ===== */
+#addProductForm {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#addProductForm h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+#addProductForm div {
+    text-align: left;
+}
+
+#addProductForm button {
+    width: auto;
+    min-width: 120px;
+    display: inline-block;
+}
+
+#addProductForm button[type="submit"] {
+    background-color: #27ae60;
+}
+
+#addProductForm button[type="submit"]:hover {
+    background-color: #229954;
+}
+
+#cancelBtn {
+    background-color: #e74c3c;
+    margin-left: 10px;
+}
+
+#cancelBtn:hover {
+    background-color: #c0392b;
+}
+

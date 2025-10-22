@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng sách </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Cửa hàng sách </h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#product-list">Sản phẩm</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Giới thiệu cửa hàng -->
+        <section id="home">
+            <h2>Chào mừng đến với Cửa hàng sách</h2>
+            <p> Kho truyện giá rẻ, chất lượng, đa dạng</p>
+        </section>
+        
+        <!-- Danh sách sản phẩm -->
+        <section id="product-list">
+            <h2>Sản phẩm nổi bật</h2>
+            
+            <!-- Thanh tìm kiếm và nút thêm sản phẩm -->
+            <div class="product-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                    <button id="searchBtn">Tìm</button>
+                </div>
+                <button id="addProductBtn">Thêm sản phẩm</button>
+            </div>
+            
+            <!-- Form thêm sản phẩm (ẩn mặc định) -->
+            <form id="addProductForm" class="hidden">
+                <h3>Thêm sản phẩm mới</h3>
+                <div>
+                    <label for="productName">Tên sản phẩm:</label>
+                    <input type="text" id="productName" name="productName" required>
+                </div>
+                
+                <div>
+                    <label for="productDesc">Mô tả:</label>
+                    <textarea id="productDesc" name="productDesc" rows="3" required></textarea>
+                </div>
+                
+                <div>
+                    <label for="productPrice">Giá (VNĐ):</label>
+                    <input type="number" id="productPrice" name="productPrice" required>
+                </div>
+                
+                <div>
+                    <label for="productImage">URL hình ảnh:</label>
+                    <input type="text" id="productImage" name="productImage" placeholder="../assets/ten-hinh.jpg">
+                </div>
+                
+                <button type="submit">Thêm</button>
+                <button type="button" id="cancelBtn">Hủy</button>
+            </form>
+            
+            <div id="products-container">
+            <!-- Sản phẩm 1 -->
+            <article class="product-item">
+                <img src="../assets/doraemon.jpg" alt="Doraemon" width="200" height="300">
+                <h3>Doraemon</h3>
+                <p>Bộ truyện tranh nổi tiếng về chú mèo máy đến từ tương lai với túi đồ thần kỳ, cùng Nobita và những người bạn trong những cuộc phiêu lưu đầy ý nghĩa.</p>
+                <p class="price"><strong>Giá: 25,000 VNĐ</strong></p>
+            </article>
+            
+            <!-- Sản phẩm 2 -->
+            <article class="product-item">
+                <img src="../assets/conan.webp" alt="Thám Tử Lừng Danh Conan" width="200" height="300">
+                <h3>Thám Tử Lừng Danh Conan</h3>
+                <p>Truyện trinh thám hấp dẫn về cậu bé Conan với những vụ án bí ẩn, logic suy luận tinh tế và hành trình tìm kiếm tổ chức Áo Đen.</p>
+                <p class="price"><strong>Giá: 20,000 VNĐ</strong></p>
+            </article>
+            
+            <!-- Sản phẩm 3 -->
+            <article class="product-item">
+                <img src="../assets/dragonball.jfif" alt="Dragon Ball" width="200" height="300">
+                <h3>Dragon Ball</h3>
+                <p>Bộ truyện hành động kinh điển về Son Goku và hành trình tìm kiếm 7 viên ngọc rồng, với những trận chiến ngoạn mục và tinh thần chiến đấu bất khuất.</p>
+                <p class="price"><strong>Giá: 22,000 VNĐ</strong></p>
+            </article>
+            </div>
+        </section>
+        
+        <!-- Form liên hệ -->
+        <section id="contact">
+            <h2>Liên hệ với chúng tôi</h2>
+            <form>
+                <div>
+                    <label for="name">Tên của bạn:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <h3>Cửa hàng sách</h3>
+        <p>Địa chỉ: Bách Khoa, Hai Bà Trưng, Hà Nội </p>
+        <p>Điện thoại: 0123 456 789</p>
+        <p>Email: cuahangsach@gmail.com</p>
+        <p>&copy; 2025 Cửa hàng sách. Bản quyền thuộc về chúng tôi.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
