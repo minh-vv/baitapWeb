@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nhóm 13 — Dự án: Trang web học tiếng Nhật</title>
+  <meta name="description" content="Trang giới thiệu Nhóm 13 và dự án Trang web học tiếng Nhật" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-badge">13</div>
+        <div>
+          <div>Nhóm 13</div>
+          <small class="muted">Dự án: Trang web học tiếng Nhật</small>
+        </div>
+      </div>
+      <nav class="row">
+        <a class="btn" href="#du-an">Dự án</a>
+        <a class="btn" href="#thanh-vien">Thành viên</a>
+        <a class="btn" href="#tinh-nang">Tính năng</a>
+        <a class="btn" href="#ke-hoach">Kế hoạch</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Xin chào! Chúng mình là <span style="background: #111;color:#fff;border-radius:10px;padding:4px 10px">Nhóm 13</span> — <em>Trang web học tiếng Nhật</em></h1>
+      <p>Mục tiêu của chúng mình là tạo ra một website hỗ trợ người học tiếng Nhật từ mức cơ bản đến trung cấp, tập trung vào trải nghiệm trực quan, luyện tập đa dạng và theo dõi tiến độ học tập.</p>
+      <div class="cta">
+        <a href="#du-an" class="btn-primary">Tìm hiểu dự án</a>
+        <a href="#thanh-vien" class="btn-ghost">Gặp gỡ đội ngũ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Intro -->
+  <section id="du-an">
+    <div class="container">
+      <h2 class="section-title">Giới thiệu ngắn gọn về dự án</h2>
+      <p class="section-desc">“Trang web học tiếng Nhật” hướng tới tính <strong>tươi sáng</strong>, <strong>thân thiện</strong> và <strong>dễ tiếp cận</strong>. Ứng dụng gồm các mô-đun học từ vựng, ngữ pháp, luyện đọc, flashcards và bài kiểm tra nhỏ theo chủ đề.</p>
+      <div class="grid cols-3">
+        <div class="card feature">
+          <div class="icon b1">あ</div>
+          <div>
+            <h3>Hiragana & Katakana</h3>
+            <p class="muted">Bảng chữ cái, cách viết, luyện đọc và quiz ghi nhớ nhanh.</p>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="icon b2">語</div>
+          <div>
+            <h3>Từ vựng theo chủ đề</h3>
+            <p class="muted">Flashcards, âm thanh phát âm, ví dụ sử dụng trong ngữ cảnh.</p>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="icon b3">文</div>
+          <div>
+            <h3>Ngữ pháp cơ bản</h3>
+            <p class="muted">Bài học ngắn gọn, minh hoạ dễ hiểu kèm bài tập trắc nghiệm.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <strong>Giao diện tươi sáng</strong> với màu hồng/xanh/vàng chủ đạo, icon rõ ràng và thẻ nội dung có bóng nhẹ giúp tập trung vào bài học mà không bị rối mắt.
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="thanh-vien">
+    <div class="container">
+      <h2 class="section-title">Thành viên nhóm</h2>
+      <p class="section-desc">Nhóm 13 gồm 4 thành viên. Dưới đây là MSSV và họ tên.</p>
+      <div class="grid cols-2">
+        <article class="card member">
+          <div class="avatar avatar--1">MM</div>
+          <div>
+            <h3>Vũ Văn Minh</h3>
+            <div class="row">
+              <span class="tag">MSSV: 20225747</span>
+              <span class="tag">Vai trò: Frontend</span>
+            </div>
+            <div class="meta">Tập trung tối ưu trải nghiệm người dùng và giao diện tươi sáng.</div>
+          </div>
+        </article>
+        <article class="card member">
+          <div class="avatar avatar--2">LL</div>
+          <div>
+            <h3>Nguyễn Đức Long</h3>
+            <div class="row">
+              <span class="tag">MSSV: 20225876</span>
+              <span class="tag">Vai trò: Backend</span>
+            </div>
+            <div class="meta">Thiết kế API, xử lý dữ liệu bài học và bài kiểm tra.</div>
+          </div>
+        </article>
+        <article class="card member">
+          <div class="avatar avatar--3">NN</div>
+          <div>
+            <h3>Đặng Phương Nam</h3>
+            <div class="row">
+              <span class="tag">MSSV: 20225892</span>
+              <span class="tag">Vai trò: Nội dung</span>
+            </div>
+            <div class="meta">Biên soạn bài học, ví dụ, và đề mục từ vựng/ngữ pháp.</div>
+          </div>
+        </article>
+        <article class="card member">
+          <div class="avatar avatar--4">QQ</div>
+          <div>
+            <h3>Nguyễn Hồng Quân</h3>
+            <div class="row">
+              <span class="tag">MSSV: 20225908</span>
+              <span class="tag">Vai trò: Kiểm thử</span>
+            </div>
+            <div class="meta">Đảm bảo chất lượng, kiểm thử tính năng và hiệu năng.</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="tinh-nang">
+    <div class="container">
+      <h2 class="section-title">Tính năng nổi bật</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Học theo lộ trình</h3>
+          <p class="muted">Chia nhỏ bài học, đánh dấu tiến độ và gợi ý bài tiếp theo.</p>
+        </div>
+        <div class="card">
+          <h3>Quiz & điểm số</h3>
+          <p class="muted">Câu hỏi trắc nghiệm, chấm điểm tức thì, hiển thị đáp án giải thích.</p>
+        </div>
+        <div class="card">
+          <h3>Âm thanh & phát âm</h3>
+          <p class="muted">Nghe phát âm mẫu, so sánh và luyện nói theo nhịp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline / Plan -->
+  <section id="ke-hoach">
+    <div class="container">
+      <h2 class="section-title">Kế hoạch thực hiện</h2>
+      <div class="grid cols-2">
+        <div class="card timeline">
+          <div class="tl-item">
+            <h4>Tuần 1 — Khảo sát & Thiết kế UI</h4>
+            <p>Phác thảo giao diện (wireframe), chọn màu sắc tươi sáng và cấu trúc trang.</p>
+          </div>
+          <div class="tl-item">
+            <h4>Tuần 2 — Xây dựng module chữ cái</h4>
+            <p>Hiragana/Katakana, flashcards và quiz cơ bản.</p>
+          </div>
+          <div class="tl-item">
+            <h4>Tuần 3 — Từ vựng & Ngữ pháp</h4>
+            <p>Bài học theo chủ đề, ví dụ câu, luyện tập.</p>
+          </div>
+          <div class="tl-item">
+            <h4>Tuần 4 — Hoàn thiện & Kiểm thử</h4>
+            <p>Tối ưu hiệu năng, sửa lỗi, chuẩn bị demo.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Ngôn ngữ & Công cụ</h3>
+          <div class="badges" style="margin-top:10px">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Responsive</span>
+          </div>
+          <p class="muted" style="margin-top:12px">Thiết kế ưu tiên khả năng truy cập (contrast đủ, tab focus rõ ràng), và hiển thị tốt trên thiết bị di động.</p>
+          <div style="margin-top:12px">
+            <span class="kbd">Ctrl</span> + <span class="kbd">L</span> để nhảy đến mục bằng liên kết neo trong thanh điều hướng.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container row" style="justify-content:space-between;align-items:center">
+      <div class="muted">© Nhóm 13 — 2025</div>
+      <div class="badges">
+        <span class="pill">Phong cách: Tươi sáng</span>
+        <span class="pill">Màu chủ đạo: Hồng / Xanh / Vàng</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
